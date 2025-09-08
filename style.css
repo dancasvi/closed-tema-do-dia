@@ -1,0 +1,46 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0d6efd;
+  --avatar-bg:#e9eefc;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  margin:0;
+  color:#1f2937;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* cabeçalho e card */
+.card{border:0;border-radius:10px;background:var(--card)}
+.form-control[readonly]{background:#f3f4f6;cursor:default}
+
+/* status area */
+#statusArea{min-height:28px}
+
+/* tabela */
+.table thead th{font-weight:700;font-size:.9rem}
+.table td{vertical-align:middle}
+
+/* avatar iniciais */
+.avatar{
+  height:36px;width:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  margin-right:10px;font-weight:600;color:#0f172a;background:var(--avatar-bg);flex:0 0 36px;
+}
+.name-cell{display:flex;align-items:center;word-break:break-word}
+
+/* botões */
+.btn-sm{padding:.28rem .6rem}
+
+/* modal */
+#modalSpinner{color:var(--muted)}
+#modalImage{border-radius:6px}
+
+/* responsividade fina */
+@media (max-width:575px){
+  .input-group.w-100.w-md-50{width:100%!important}
+}
