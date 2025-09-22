@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // imagens/<nome-sanitzado>/<nome-sanitzado>.<ext>
     const sanitized = sanitizeFilename(nome);
     const baseFolder = `imagens/${encodeURIComponent(sanitized)}`;
-    const candidates = [`${baseFolder}/imagem1.png`];
+    const candidates = [`${baseFolder}/imagem.png`];
 
 
     // tenta encontrar a primeira que carrega
